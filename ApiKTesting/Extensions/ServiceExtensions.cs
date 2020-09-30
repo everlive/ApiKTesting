@@ -1,4 +1,5 @@
 using System.ComponentModel.Design;
+using Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -22,5 +23,8 @@ namespace ApiKTesting.Extensions
             {
 
             });
+        
+        public static void ConfigureLoggerService(this IServiceCollection services)=>
+            services.AddScoped<ILoggerManager, LoggerManager>();
     }
 }

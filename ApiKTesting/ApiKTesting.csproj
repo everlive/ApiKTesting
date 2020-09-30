@@ -12,5 +12,13 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="nlog.config" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Contracts\Contracts.csproj" />
+    </ItemGroup>
+
 
 </Project>
